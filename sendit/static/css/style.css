@@ -1,0 +1,126 @@
+:root {
+  --black: #002635;
+  --white: #ffffff;
+  --black-ligth: #002635;
+  --white-ligth: #e6e6dc;
+  --red-dark: #c43060;
+  --red-ligth: #ff5a67;
+  --orange-dark: #a53105;
+  --orange-ligth: #f95738;
+  --yellow-dark: #f08e48;
+  --yellow-ligth: #ffcc1b;
+  --green-dark: #2aaf59;
+  --green-ligth: #9cf087;
+  --blue-dark: #1c8db2;
+  --blue-ligth: #3199bb;
+  --purple-dark: #c694ff;
+  --purple-ligth: #fb94ff;
+  --cyan-dark: #00cccc;
+  --cyan-ligth: #00ffff;
+  --green: #22c65b;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.page {
+    background-color: var(--orange-ligth);
+    margin: 5% 15%;
+    font-family: var(--font);
+    text-rendering: optimizeLegibility;
+}
+
+.login {
+    background-color: var(--white);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.login__titulo {
+    font-size: 2rem;
+    color: var(--black-ligth);
+    font-weight: bold;
+    margin: 0 0 2rem 0;
+    text-align: center;
+}
+
+.autentication__label, #submit-login {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#user, #password, #submit-login {
+    padding: 0.6rem;
+    margin: 1rem 0;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+#user, #password {
+    text-align: left;
+    width: 100%;
+}
+
+#submit-login {
+    color: var(--white);
+    background-color: var(--green);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#submit-login:hover {
+    background-color: var(--green-dark);
+}
+
+.questions {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.questions div {
+    margin: 1rem 0;
+}
+
+#join, #change-password {
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+#join {
+    background-color: var(--blue-dark);
+}
+
+#join:hover {
+    background-color: var(--blue-ligth);
+}
+
+#change-password {
+    color: var(--black);
+    background-color: var(--yellow-ligth);
+}
+
+#change-password:hover {
+    opacity: 0.9;
+}
+
+@media (min-width:0) and (max-width:768px) {
+    .page {
+        margin: 5%;
+    }
+
+    .questions {
+        display: block;
+    }
+
+    #join, #change-password,.questions__label {
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
