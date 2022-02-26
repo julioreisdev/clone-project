@@ -1,0 +1,103 @@
+.page {
+  max-width: 900px !important;
+  margin: 150px auto 0 auto;
+  padding: 0 1rem;
+}
+
+.page .main .main-contents .login .login-form-register .input, .page .main .main-contents .login .login-form .login-form-login .input {
+  padding: 1rem;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  display: block;
+  font-size: 1rem;
+}
+
+.page .footer, .page .main .main-contents .login .login-form-register {
+  border-top: 1px solid #dfdfdf;
+}
+
+/*  */
+.page {
+  background-color: #f0f2f5;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.page .main .main-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .main .main-contents .presentation {
+  width: 45%;
+}
+.page .main .main-contents .presentation .presentation-title {
+  color: #3770e4;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.page .main .main-contents .presentation .presentation-text {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.page .main .main-contents .login {
+  width: 45%;
+}
+.page .main .main-contents .login .login-form {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #aaa6a6;
+}
+.page .main .main-contents .login .login-form .login-form-login {
+  text-align: center;
+}
+.page .main .main-contents .login .login-form .login-form-login .input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.page .main .main-contents .login .login-form .login-form-login .submit-login {
+  background-color: #3770e4;
+  color: #fff;
+  width: 100% !important;
+  font-weight: bold;
+  transition: 0.2s all;
+}
+.page .main .main-contents .login .login-form .login-form-login .submit-login:hover {
+  background-color: #3165ce;
+  cursor: pointer;
+}
+.page .main .main-contents .login .login-form-register {
+  margin-top: 1rem;
+}
+.page .main .main-contents .login .login-form-register .input-register {
+  background-color: #42b72a;
+  color: #fff;
+  width: 60% !important;
+  font-weight: bold;
+  transition: 0.2s all;
+  margin: 1rem auto;
+}
+.page .main .main-contents .login .login-form-register .input-register:hover {
+  background-color: #3c9e28;
+  cursor: pointer;
+}
+.page .footer {
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .page {
+    margin-top: 100px;
+  }
+
+  .main-contents {
+    text-align: center;
+    flex-direction: column;
+  }
+  .main-contents .presentation, .main-contents .login {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
