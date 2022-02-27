@@ -1,0 +1,48 @@
+.login {
+  width: 45%;
+
+  .login-form {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px $grey;
+
+    .login-form-login {
+      text-align: center;
+
+      .input {
+        @extend %pattern-input;
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      .submit-login {
+        @include submit-login($blue, $white, 100%);
+
+        &:hover {
+          background-color: $dark-blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .login-form-register {
+    @extend %border-top;
+    margin-top: 1rem;
+
+    .input {
+      @extend %pattern-input;
+    }
+
+    .input-register {
+      @include submit-login($green, $white, 60%);
+      margin: 1rem auto;
+
+      &:hover {
+        background-color: $dark-green;
+        cursor: pointer;
+      }
+    }
+  }
+}

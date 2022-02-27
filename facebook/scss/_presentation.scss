@@ -1,0 +1,13 @@
+.presentation {
+  width: 45%;
+  .presentation-title {
+    color: $blue;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .presentation-text {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}

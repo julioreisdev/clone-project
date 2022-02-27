@@ -1,0 +1,40 @@
+$white: #fff;
+$low-contrast-white: #f0f2f5;
+$blue: #3770e4;
+$dark-blue: #3165ce;
+$grey: rgb(170, 166, 166);
+$light-grey: rgb(223, 223, 223);
+$green: #42b72a;
+$dark-green: #3c9e28;
+$font: Helvetica, Arial, sans-serif;
+
+@mixin flex($property, $value) {
+  display: flex;
+  #{$property}: $value;
+}
+
+%width-content {
+  max-width: 900px !important;
+  margin: 150px auto 0 auto;
+  padding: 0 1rem;
+}
+
+%pattern-input {
+  padding: 1rem;
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+  display: block;
+  font-size: 1rem;
+}
+
+%border-top {
+  border-top: 1px solid $light-grey;
+}
+
+@mixin submit-login($background-color, $color, $width) {
+  background-color: $background-color;
+  color: $color;
+  width: $width !important;
+  font-weight: bold;
+  transition: 0.2s all;
+}

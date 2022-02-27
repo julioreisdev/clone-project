@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  %width-content {
+    margin-top: 100px;
+  }
+
+  .main-contents {
+    text-align: center;
+    flex-direction: column;
+
+    .presentation,
+    .login {
+      width: 100% !important;
+    }
+  }
+}

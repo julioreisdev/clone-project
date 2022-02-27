@@ -16,7 +16,6 @@
   border-top: 1px solid #dfdfdf;
 }
 
-/*  */
 .page {
   background-color: #f0f2f5;
   font-family: Helvetica, Arial, sans-serif;
@@ -95,7 +94,8 @@
     text-align: center;
     flex-direction: column;
   }
-  .main-contents .presentation, .main-contents .login {
+  .main-contents .presentation,
+.main-contents .login {
     width: 100% !important;
   }
 }
