@@ -4,7 +4,7 @@
 }
 
 .footer, .main .content-login .acess-change-password .submit, .main .content-login .form, .header {
-  background-color: #CC092F;
+  background-color: #cc092f;
   color: #fff;
 }
 
@@ -19,7 +19,8 @@
   font-size: 0.8rem;
 }
 
-.main .content-login .form .legend, .main .content-login .form .input {
+.main .content-login .form .legend,
+.main .content-login .form .input {
   display: block;
 }
 .main .content-login .form .legend {
@@ -45,6 +46,21 @@
 }
 .footer .link {
   color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .header, .main .content-login, .footer {
+    width: 100%;
+  }
+
+  .main .content-login .form, .main .content-login .acess-change-password {
+    width: 60%;
+    margin: 2rem auto 1rem auto;
+  }
+
+  .submit {
+    display: block !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

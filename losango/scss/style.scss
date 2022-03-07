@@ -1,22 +1,4 @@
-$red: #CC092F;
-$white: #fff;
-$font: 'Arial';
-
-%pattern-size-container {
-  width: 800px;
-  margin: 0 auto;
-}
-
-%pattern-color-section {
-  background-color: $red;
-  color: $white;
-}
-
-%pattern-size-form {
-  width: 250px;
-  margin: 2rem 0 1rem 1rem;
-  padding: 0rem 2rem 1rem 2rem;
-}
+@import "sass-property";
 
 .page {
   font-family: $font;
@@ -28,45 +10,17 @@ $font: 'Arial';
 }
 
 .main {
-  .content-login {
-    @extend %pattern-size-container;
-
-    .form {
-      @extend %pattern-color-section, %pattern-size-form;
-
-      .legend, .input {
-        display: block;
-      }
-      .legend {
-        padding: 0.5rem 0;
-      }
-      .input {
-        width: 100%;
-      }
-    }
-
-    .acess-change-password {
-      @extend %pattern-size-form;
-      padding: 0;
-      text-align: center;
-
-      .submit {
-        @extend %pattern-color-section;
-        border: none;
-        width: 40%;
-        padding: 0.2rem;
-        margin-bottom: 1.5rem;
-      }
-    }
-  }
+  @import "content-login";
 }
 
 .footer {
   @extend %pattern-color-section, %pattern-size-container;
   padding: 1rem 0.5rem;
   text-align: center;
-  
+
   .link {
     color: $white !important;
   }
 }
+
+@import "media-queries";

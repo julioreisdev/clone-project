@@ -1,0 +1,19 @@
+$red: #cc092f;
+$white: #fff;
+$font: "Arial";
+
+%pattern-size-container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+%pattern-color-section {
+  background-color: $red;
+  color: $white;
+}
+
+%pattern-size-form {
+  width: 250px;
+  margin: 2rem 0 1rem 1rem;
+  padding: 0rem 2rem 1rem 2rem;
+}
