@@ -1,0 +1,84 @@
+.page {
+  font-family: "Nunito", sans-serif;
+  background-image: url("../static/img/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.page .header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  width: 80%;
+  margin: 0 auto;
+}
+.page .header-nav .sign {
+  margin-right: 150px;
+  background-color: #ffd800;
+  color: black;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+.page .header-nav .sign:hover {
+  background-color: #333;
+  color: #ffd800;
+}
+.page .header-nav .login {
+  color: #fff;
+}
+.page .header-nav .login .login-icon {
+  width: 14px;
+}
+.page .header-nav .login:hover {
+  color: #ffd800;
+}
+.page .header-nav .login-responsive-mode {
+  display: none;
+}
+.page .picture-teacher {
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: none;
+  background-image: url("../static/img/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+  .page {
+    background-image: none;
+  }
+  .page .header .header-nav {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    background-color: #0a3053;
+    box-shadow: 0 1px 10px #0a3053;
+    position: fixed;
+    top: 0;
+  }
+  .page .header .header-nav .sign {
+    display: none;
+  }
+  .page .header .header-nav .login {
+    display: none;
+  }
+  .page .header .header-nav .login-responsive-mode {
+    display: block;
+  }
+  .page .main .picture-teacher {
+    display: block;
+  }
+}
+@media (min-width: 0) and (max-width: 350px) {
+  .page .header .header-nav {
+    padding: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

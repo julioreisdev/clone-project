@@ -1,0 +1,8 @@
+@import 'sass-properties';
+
+.picture-teacher {
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: none;
+  @include background-image(background-image, url('../static/img/bg.png'))
+}

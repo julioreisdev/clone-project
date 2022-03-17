@@ -1,0 +1,18 @@
+$font: 'Nunito', sans-serif;
+$yellow: #ffd800;
+$dark-grey: #333;
+$white: #fff;
+
+@mixin background-image($property, $url) {
+  #{$property}: $url;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@mixin flex($property01, $value01, $property02, $value02) {
+  display: flex;
+  #{$property01}: $value01;
+  #{$property02}: $value02;
+}

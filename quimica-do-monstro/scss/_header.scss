@@ -1,0 +1,39 @@
+@import 'sass-properties';
+
+.header-nav {
+  @include flex(justify-content, space-between, align-items, center);
+  padding: 1rem 0;
+  width: 80%;
+  margin: 0 auto;
+
+  .sign {
+    margin-right: 150px;
+    background-color: $yellow;
+    color: black;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $dark-grey;
+      color: $yellow;
+    }
+  }
+
+  .login {
+    color: $white;
+
+    .login-icon {
+      width: 14px;
+    }
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  .login-responsive-mode {
+    display: none;
+  }
+}

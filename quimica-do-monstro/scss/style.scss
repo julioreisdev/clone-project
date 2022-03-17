@@ -1,0 +1,10 @@
+@import 'sass-properties';
+
+.page {
+  font-family: $font;
+  @include background-image(background-image, url('../static/img/bg.png'));
+
+  @import 'header', 'main';
+}
+
+@import 'media-queries';
